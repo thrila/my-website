@@ -8,27 +8,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "banner-dark": "#176B87",
-        "text-dark": "#001C30",
-        "background-dark": "#64CCC5",
-        "buttons-dark": "#176B87",
-        "banner-light": "#176B87",
-        "text-light": "#001C30",
-        "background-light": "#64CCC5",
-        "buttons-light": "#176B87",
-        "container": {
-          center: true,
-          padding: '2rem',
-          width: '768px'
-        },
+        "custom-background": "#352F44",
+        "button-before": "#B9B4C7",
+        "custom-text": '#FAF0E6',
+        "hover-color": "#5C5470"
+      },
+      container: {
+        center: true,
+        padding: '1rem',
+        maxWidth: '768px'
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
       fontFamily: {
-        sans: ["Graphik", "sans-serif"],
-        serif: ["Merriweather", "serif"],
+        sans: ['var(--font-roboto)'],
+        serif: ['var(--font-merriweather)'],
+        mono: ['var(--font-jetbrains_mono)'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

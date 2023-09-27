@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='container  border-t mx-auto'>
-      <div className='flex flex-row space-x-40 text-zinc-600 text-center mt-10 mb-5 '>
+    <div className='container  max-w-3xl mx-auto'>
+      <div className='flex  border-t flex-row justify-evenly text-button-before text-center mt-5 mb-10 md:mb-5 '>
         <div className='flex flex-col space-y-6 p-5'>
           <Link href='#'>Home</Link>
           <Link href='#'>Hackernoon</Link>
