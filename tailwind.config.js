@@ -18,10 +18,10 @@ module.exports = {
         padding: '1rem',
         maxWidth: '768px'
       },
-      fontFamily: {
-        sans: ["Graphik", "sans-serif"],
-        serif: ["Merriweather", "serif"],
-      },
+      // fontFamily: {
+      //   sans: ["Graphik", "sans-serif"],
+      //   serif: ["Merriweather", "serif"],
+      // },
       fontFamily: {
         sans: ['var(--font-roboto)'],
         serif: ['var(--font-merriweather)'],

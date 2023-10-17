@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono, Roboto, Open_Sans, Merriweather } from "next/font/google";
+import NavBar from "./components/header/navbar";
+import Footer from "./components/footer/footer";
 
 const jetbrains_mono = JetBrains_Mono({
   subsets: ['latin'],
@@ -33,7 +35,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jetbrains_mono.variable} ${roboto.variable} ${merriweather.variable}`}>{children}</body>
+      <body className={`${jetbrains_mono.variable} ${roboto.variable} ${merriweather.variable} `}>
+
+        {children}
+      </body>
     </html>
   );
 }

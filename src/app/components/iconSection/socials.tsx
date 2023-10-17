@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 import { SlSocialGithub, SlSocialTwitter, SlSocialLinkedin } from 'react-icons/sl'
 import { SiDiscord, SiHackernoon, SiHackerrank } from 'react-icons/si'
@@ -8,11 +7,11 @@ const Socials = () => {
   return (
     <div className=' mx-auto'>
       <div className=' flex items-center space-x-5 md:space-x-10 m-3'>
-        <Link href='#' className='text-white text-4xl md:text-6xl font-thin'> <SlSocialGithub /> </Link>
-        <Link href='#' className='text-white text-4xl md:text-6xl font-thin'> <SlSocialLinkedin /> </Link>
-        <Link href='#' className='text-white text-4xl md:text-6xl font-thin'> <SlSocialTwitter /> </Link>
-        <Link href='#' className='text-white text-4xl md:text-6xl font-thin'> <SiDiscord /> </Link>
-        <Link href='#' className='text-white text-4xl md:text-6xl font-thin'> <SiHackernoon /> </Link>
+        <a target="_blank" rel="noopener noreferrer" href='https://www.github.com/thrila' className='text-white text-4xl md:text-6xl font-thin hover:text-button-before'> <SlSocialGithub /> </a>
+        <a target="_blank" rel="noopener noreferrer" href='#' className='text-white text-4xl md:text-6xl font-thin hover:text-button-before'> <SlSocialLinkedin /> </a>
+        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/nino_da_creator' className='text-white text-4xl md:text-6xl font-thin hover:text-button-before'> <SlSocialTwitter /> </a>
+        <a target="_blank" rel="noopener noreferrer" href='discordapp.com/users/830840937273229332' className='text-white text-4xl md:text-6xl font-thin hover:text-button-before'> <SiDiscord /> </a>
+        <a target="_blank" rel="noopener noreferrer" href='https://hackernoon.com/u/indieboy' className='text-white text-4xl md:text-6xl font-thin hover:text-button-before'> <SiHackernoon /> </a>
       </div>
     </div>
   )
