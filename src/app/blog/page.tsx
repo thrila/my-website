@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const index = () => {
   return (
-    <main className="flex flex-col  font-sans bg-custom-background  justify-center items-stretch">
+    <main className="flex flex-col min-h-screen  font-sans bg-custom-background  justify-center items-stretch">
       <NavBar />
       <BlogHero />
       <BlogList />
