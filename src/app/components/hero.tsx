@@ -9,7 +9,7 @@ export const Hero = () => {
       < div className='flex justify-around md:justify-between flex-col-reverse md:flex-row ' >
         <div className='pr-auto md:w-1/2'>
           <div className=' my-3'>
-            <h1 className='font-bold font-serif text-3xl md:text-5xl text-custom-text'>Ifeanyi Ndubuizu</h1>
+            <h1 className='font-bold font-serif text-3xl md:text-5xl text-custom-text'>Michael Emmanuel</h1>
           </div>
           <div className='w-auto md:pr-5'>
             <p className=' text-left font-normal text-custom-text'> Student of Engineering,<Link className='text-text-light' href='www.github.com/thrila'>Developer </Link>  Linux and Open Source enthausist this is some extra text to make sure it works how i want</p>
