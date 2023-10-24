@@ -12,12 +12,13 @@ export const BlogItem = ({ data }: Props) => {
   const formattedTitle = getFormattedString(title)
   return (
     <div >
-      <Link href={`/blog/${id}`} >  <div className='flex justify-between md:space-x-20 py-3 border-b border-zinc-400 font-thin hover:text-xl'>
-        <div className='pr-2 w-1/8'><p className='text-button-before font-thin'>{formattedDate}</p></div>
-        <div className='flex justify-start'><h3 className='text-left md:text-xl'>{formattedTitle} </h3></div>
-        <div><p className='text-button-before w-1/8 pl-2'>{id}</p>
+      <Link href={`/blog/${id}`} >
+        <div className='flex md:flex-row flex-col justify-between md:space-x-20 py-3 border-b border-zinc-400 font-thin hover:text-xl'>
+          <div className='pr-2 w-1/8'><p className='text-button-before font-thin text-sm'>{formattedDate}</p></div>
+          <div className='flex justify-start'><h3 className='text-left text-sm md:text-xl'>{formattedTitle} </h3></div>
+          <div><p className='text-button-before w-1/8 pl-2 text-sm'>{id}</p>
+          </div>
         </div>
-      </div>
       </Link>
     </div >
   );

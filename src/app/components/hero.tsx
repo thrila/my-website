@@ -12,7 +12,7 @@ export const Hero = () => {
             <h1 className='font-bold font-serif text-3xl md:text-5xl text-custom-text'>Michael Emmanuel</h1>
           </div>
           <div className='w-auto md:pr-5'>
-            <p className=' text-left font-normal text-custom-text'> Student of Engineering,<Link className='text-text-light' href='www.github.com/thrila'>Developer </Link>  Linux and Open Source enthausist this is some extra text to make sure it works how i want</p>
+            <p className=' text-left font-normal text-custom-text'> Student of Engineering,<Link className='text-text-light' href='www.github.com/thrila'>Developer </Link> Web Developer, Linux and Open Source enthusiast with 3+ years of experience making web apps and writing hacky scripts</p>
           </div>
         </div>
         <div className=' pl-auto rounded-full h-20 w-20 border-2 border-white  md:h-40 md:w-40 relative '>
