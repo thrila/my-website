@@ -41,7 +41,7 @@ export default async function Post({ params }: { params: { id: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="flex flex-col  h-screen font-sans bg-custom-background  justify-center items-stretch">
+    <main className="flex flex-col  min-h-screen font-sans bg-custom-background  justify-center items-stretch">
       <NavBar />
       <div className="container max-w-3xl">   <h1 className="text-3xl mt-4 mb-5">{title}</h1>
         <p className="mb-5 font-thin">
