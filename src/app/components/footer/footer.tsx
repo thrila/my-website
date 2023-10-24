@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col space-y-6 text-center p-5'>
           <Link href='/about'>About</Link>
-          <a target="_blank" rel="noopener noreferrer" href='#'>Linkedin</a>
+          <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/michael-ndubuizu-3a49a31b7/'>Linkedin</a>
           <a target="_blank" rel="noopener noreferrer" href='https://www.github.com/thrila'>Github</a>
         </div>
         <div className='flex flex-col space-y-6 text-center p-5'>
