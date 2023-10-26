@@ -27,6 +27,7 @@ const NavBar = () => {
     }
   }
 
+
   return (
     <nav className="container mx-auto m-6 max-w-3xl ">
 
@@ -35,7 +36,10 @@ const NavBar = () => {
         <div onClick={handleSwitch} className=" md:hidden">{navIcon()}</div>
         <div className=" md:flex hidden space-x-4 px-2 items-center">
           {navLink.map((item) => {
-            return <Link key={item.name} href={item.link} className="hover:text-hover-color ">{item.name}</Link>
+            return <Link key={item.name} href={item.link} >
+              <div >  {item.name}
+              </div>
+            </Link>
           })}
         </div>
         {/* End of Nav Items */}
@@ -44,7 +48,11 @@ const NavBar = () => {
       <div className={hidden}>
         <div className="flex flex-col justify-center items-center py-5 space-y-2">
           {navLink.map((item) => {
-            return <Link key={item.name} href={item.link} className="hover:text-hover-color ">{item.name}</Link>
+            return (
+              <Link key={item.name} href={item.link} className="hover:text-hover-color ">
+                <div className="transition ease-in duration-500 hover:bg-button-before hover:text-custom-background px-4 "> {item.name}</div>
+              </Link>
+            )
           })}
         </div>
       </div>
