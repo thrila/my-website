@@ -34,12 +34,12 @@ const NavBar = () => {
       <div className="justify-between  flex flex-center text-xl text-white">
         {/* Start of nav items  */}
         <div onClick={handleSwitch} className=" md:hidden">{navIcon()}</div>
-        <div className=" md:flex hidden space-x-4 px-2 items-center">
+        <div className=" md:flex md:visible flex-row hidden  space-x-4 px-2 items-center">
           {navLink.map((item) => {
-            return <Link key={item.name} href={item.link} >
-              <div >  {item.name}
-              </div>
+            return (<Link key={item.name} href={item.link} >
+              <div className="transition ease-in duration-500 hover:bg-button-before hover:text-custom-background px-4 ">{item.name}</div>
             </Link>
+            )
           })}
         </div>
         {/* End of Nav Items */}

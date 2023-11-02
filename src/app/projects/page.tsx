@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../components/aboutComponents/projectSection/projectCard'
+import Card from '../components/projectSection/projectCard'
 import NavBar from '../components/header/navbar'
 import Footer from '../components/footer/footer'
 
