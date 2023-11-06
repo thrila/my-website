@@ -16,13 +16,11 @@ export const Hero = () => {
           </div>
         </div>
         <div className=' pl-auto rounded-full h-20 w-20 border-2 border-white  md:h-40 md:w-40 relative '>
-          <Image className=' w-full h-full overflow-hidden rounded-full'
-            alt='an old picture of Ifeanyi '
+          <Image className='object-cover w-full h-full overflow-hidden rounded-full'
+            alt='Danny phanthom'
             src='/danny.jpeg'
             layout='fill'
-            objectFit='cover'
-            width={0}
-            height={0}
+            loading='eager'
 
           />
         </div>
