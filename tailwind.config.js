@@ -11,7 +11,8 @@ module.exports = {
         "custom-background": "#352F44",
         "button-before": "#B9B4C7",
         "custom-text": '#FAF0E6',
-        "hover-color": "#5C5470"
+        "hover-color": "#5C5470",
+        "card-color": "#5f486b"
       },
       container: {
         center: true,
