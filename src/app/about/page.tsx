@@ -2,6 +2,13 @@ import React from 'react'
 import NavBar from '../components/header/navbar'
 import Footer from '../components/footer/footer'
 import AboutSection from '../components/aboutComponents/about-section'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Thrila | About Me",
+  description: "an introduction",
+};
+
 
 const Index = () => {
   return (

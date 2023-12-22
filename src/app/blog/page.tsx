@@ -7,8 +7,8 @@ import BlogList from '../components/BlogSection/BlogList';
 
 
 export const metadata: Metadata = {
-  title: "[Thrila@Wired ~/blog]$",
-  description: "records of my thoughts and ideas",
+  title: "Thrila | blog",
+  description: "a place for my thoughts",
 };
 
 const index = () => {

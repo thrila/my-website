@@ -19,12 +19,12 @@ export async function generateMetadata({ params }: { params: { id: String } }) {
   const post = posts.find(post => post.id === id)
   if (!post) {
     return {
-      title: 'Post Not Found'
+      title: `Thrila |  404`
     }
   }
 
   return {
-    title: `cat ${post.id}.md`
+    title: `thrila | ${post.id}.md`
   }
 
 }
@@ -48,7 +48,7 @@ export default async function Post({ params }: { params: { id: string } }) {
           {pubDate}
         </p>
         <article >
-          <section className="mb-5" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <section className="mb-5 list-disc" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           <p className="mb-5">
             <Link href="/">← Back to Blogs</Link>
           </p>

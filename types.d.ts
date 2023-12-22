@@ -3,3 +3,9 @@ type BlogPost = {
   date: string,
   title: string,
 }
+type ProjectItem = {
+  name: string,
+  description: string,
+  technologies: string,
+  website: string
+}

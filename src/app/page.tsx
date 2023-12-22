@@ -3,6 +3,12 @@ import { Hero } from "./components/hero";
 import Socials from "./components/iconSection/socials";
 import { Blog } from "./components/BlogSection/blog";
 import Footer from "./components/footer/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Thrila | Home",
+  description: "Portfolio and blog",
+};
 
 export default function Home() {
   return (
