@@ -15,7 +15,7 @@ const Projects = () => {
     <div className="flex flex-col min-h-screen  font-sans bg-custom-background  justify-between items-stretch">
       <NavBar />
       {ProjectItems.map((item) => {
-        return (<Card name={item.name} description={item.description} website={item.website} technologies={item.technologies} />)
+        return (<Card key={item.name} name={item.name} description={item.description} website={item.website} technologies={item.technologies} />)
       })}
       <Footer />
     </div>
