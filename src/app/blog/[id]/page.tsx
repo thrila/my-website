@@ -6,48 +6,46 @@ import NavBar from "@/app/components/header/navbar";
 import Footer from "@/app/components/footer/footer";
 
 export async function generateStaticParams() {
-  const posts = getSortedPostsData()
+  const posts = getSortedPostsData();
 
   return posts.map((post) => ({
-    id: post.id
-  }))
+    id: post.id,
+  }));
 }
 
 export async function generateMetadata({ params }: { params: { id: String } }) {
-  const posts = getSortedPostsData()
-  const { id } = params
-  const post = posts.find(post => post.id === id)
+  const posts = getSortedPostsData();
+  const { id } = params;
+  const post = posts.find((post) => post.id === id);
   if (!post) {
     return {
-      title: `Thrila |  404`
-    }
+      title: `Thrila |  404`,
+    };
   }
 
   return {
-    title: `thrila | ${post.id}.md`
-  }
-
+    title: `thrila | ${post.id}.md`,
+  };
 }
 
 export default async function Post({ params }: { params: { id: string } }) {
+  const posts = getSortedPostsData();
+  const { id } = params;
 
-  const posts = getSortedPostsData()
-  const { id } = params
+  if (!posts.find((post) => post.id === id)) notFound();
 
-  if (!posts.find(post => post.id === id)) notFound()
+  const { title, date, contentHtml } = await getPostData(id);
 
-  const { title, date, contentHtml } = await getPostData(id)
-
-  const pubDate = getFormattedDate(date)
+  const pubDate = getFormattedDate(date);
 
   return (
-    <main className="flex flex-col  min-h-screen font-sans bg-custom-background  justify-center items-stretch">
+    <main className="flex flex-col  min-h-screen font-sans bg-custom-background  justify-center items-stretch text-white">
       <NavBar />
-      <div className="container max-w-3xl">   <h1 className="text-3xl mt-4 mb-5">{title}</h1>
-        <p className="mb-5 font-thin">
-          {pubDate}
-        </p>
-        <article >
+      <div className="container max-w-3xl">
+        {" "}
+        <h1 className="text-3xl mt-4 mb-5">{title}</h1>
+        <p className="mb-5 font-thin">{pubDate}</p>
+        <article>
           <section className="mb-5 list-disc" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           <p className="mb-5">
             <Link href="/">← Back to Blogs</Link>
@@ -56,5 +54,5 @@ export default async function Post({ params }: { params: { id: string } }) {
       </div>
       <Footer />
     </main>
-  )
+  );
 }
